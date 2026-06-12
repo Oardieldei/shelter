@@ -151,3 +151,9 @@
 	letter-spacing: 0.06em;
 	color: #000;
 }
+
+section {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 80px 40px 100px;
+}

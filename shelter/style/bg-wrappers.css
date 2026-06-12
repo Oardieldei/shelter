@@ -1,0 +1,21 @@
+.bg-wrapper {
+	width: 100%;
+}
+
+.bg-wrapper:nth-child(1) {
+	background-color: black;
+}
+
+.bg-wrapper:nth-child(2),
+.bg-wrapper:nth-child(4) {
+	background: var(--color-light-xl);
+}
+
+.bg-wrapper:nth-child(3),
+.bg-wrapper:nth-child(5) {
+	background: var(--color-light-l);
+}
+
+.bg-wrapper:nth-child(6) {
+	background-color: black;
+}
