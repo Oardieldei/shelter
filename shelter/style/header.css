@@ -2,6 +2,7 @@
 	padding: 30px 40px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	max-width: 1280px;
 	margin: 0 auto;
 }
@@ -28,4 +29,25 @@
 	letter-spacing: 0.1em;
 	color: var(--color-light-xl);
 	align-self: center;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+}
+
+.active_link {
+	color: var(--color-light-s);
+	position: relative;
+}
+
+.active_link::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: -6px;
+	height: 3px;
+	background: var(--color-primary);
 }
