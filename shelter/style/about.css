@@ -1,0 +1,20 @@
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 120px;
+}
+
+.about__content {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.about__content_title {
+	max-width: 370px;
+}
+
+.about__content_text {
+	max-width: 430px;
+}
