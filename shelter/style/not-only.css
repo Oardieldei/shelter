@@ -1,3 +1,25 @@
 .not-only {
-	padding: 60px 40px 0;
+	padding: 62px 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.non__content {
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+	margin-top: 163px;
+}
+
+.non__title {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 130%;
+	color: var(--color-light-xl);
+	max-width: 310px;
+}
+
+.non__text {
+	max-width: 460px;
 }
