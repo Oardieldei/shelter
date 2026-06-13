@@ -22,4 +22,5 @@
 
 .non__text {
 	max-width: 460px;
+	color: var(--color-dark-s);
 }

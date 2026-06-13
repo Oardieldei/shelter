@@ -37,9 +37,24 @@
 	gap: 35px;
 }
 
+.nav__link {
+	color: var(--color-dark-s);
+	transition: color .3s;
+}
+
+.nav__link:hover {
+	cursor: pointer;
+	color: var(--color-light-s);
+}
+
 .active_link {
 	color: var(--color-light-s);
 	position: relative;
+}
+
+.active_link:hover {
+	cursor: default;
+	color: var(--color-light-s);
 }
 
 .active_link::after {
