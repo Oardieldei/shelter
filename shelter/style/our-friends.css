@@ -1,0 +1,23 @@
+.our-friends {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	align-items: center;
+}
+
+.of__title {
+	text-align: center;
+}
+
+.of__slider {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.of__slider__content {
+	display: flex;
+	justify-content: space-between;
+	gap: 90px;
+}

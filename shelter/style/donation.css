@@ -1,0 +1,47 @@
+.donation {
+	width: 100%;
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.donation__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.donation__title {
+	color: var(--color-dark-l);
+	max-width: 300px;
+}
+
+.donation__info {
+	color: var(--color-dark-l);
+}
+
+.donation__description {
+	max-width: 380px;
+}
+
+.donation__card {
+	border-radius: 9px;
+	width: 349px;
+	height: 43px;
+	background: var(--color-primary);
+	transition: background .3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.donation__card:hover {
+	cursor: pointer;
+	background: var(--color-primary-light);
+}
+
+.donation__number {
+	color: var(--color-dark-l);
+}
