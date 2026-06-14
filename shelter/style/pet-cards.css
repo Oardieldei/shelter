@@ -15,7 +15,7 @@
 	background: var(--color-light-xl);
 }
 
-.pet-card:hover .of__slider__item_btn {
+.pet-card:hover .btn-border {
 	background: var(--color-primary-light);
 	border: 2px solid var(--color-primary-light);
 }

@@ -79,12 +79,21 @@
 	background: var(--color-primary);
 }
 
-.pagination.pagintation-inactive,
-.pagination.pagintation-inactive:hover,
-.pagination.pagintation-inactive:active {
+.pagination-page,
+.pagination-page:hover,
+.pagination-page:active {
+	cursor: default;
+	border: 2px solid var(--color-primary);
+	background: var(--color-primary);
+}
+
+.pagination.pagination-inactive,
+.pagination.pagination-inactive:hover,
+.pagination.pagination-inactive:active {
 	cursor: default;
 	border: 2px solid var(--color-dark-s);	
 	color: var(--color-dark-s);
+	background: inherit;
 }
 
 .header-2 {
