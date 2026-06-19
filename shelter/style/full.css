@@ -171,3 +171,9 @@ section {
 	margin: 0 auto;
 	padding: 80px 40px 100px;
 }
+
+@media (max-width: 1111px) {
+	section {
+		padding: 80px 30px 100px;
+	}
+}

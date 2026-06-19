@@ -19,3 +19,16 @@
 	align-items: center;
 	gap: 30px;
 }
+
+@media (max-width: 1111px) {
+	.help__items {
+		max-width: 630px;
+		margin: 0 auto;
+		gap: 55px 60px;
+		justify-content: space-between;
+	}
+
+	.help__item {
+		width: 170px;
+	}
+}

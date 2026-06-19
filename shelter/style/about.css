@@ -18,3 +18,10 @@
 .about__content_text {
 	max-width: 430px;
 }
+
+@media (max-width: 1111px) { 
+	.about {
+		flex-direction: column-reverse;
+		gap: 80px;
+	}
+}

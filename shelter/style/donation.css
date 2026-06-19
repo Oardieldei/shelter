@@ -45,3 +45,10 @@
 .donation__number {
 	color: var(--color-dark-l);
 }
+
+@media (max-width: 1111px) {
+	.donation {
+		flex-wrap: wrap-reverse;
+		gap: 57px;
+	}
+}
