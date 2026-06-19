@@ -28,9 +28,3 @@
 	text-align: center;
 	color: var(--color-dark-l);
 }
-
-@media (max-width: 1200px) {
-	.pet-card:nth-child(3) {
-		display: none;
-	}
-}

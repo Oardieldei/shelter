@@ -63,3 +63,23 @@
 	display: flex;
 	gap: 20px;
 }
+
+@media (max-width: 1279px) {
+	.main {
+		gap: 30px;
+		padding: 80px 30px 78px;
+	}
+
+	.pet-card:nth-child(7),
+	.pet-card:nth-child(8) {
+		display: none;
+	}
+
+	.main__content_wrapper {
+		padding: 0 0 10px;
+	}
+
+	.main__content {
+		justify-content: center;
+	}
+}
