@@ -25,12 +25,34 @@
 	color: var(--color-dark-s);
 }
 
-@media (max-width: 1111px) {
+@media (max-width: 1279px) {
 	.not-only {
-		padding: 32px 30px 0;
 		flex-direction: column;
 		gap: 100px;
 		align-items: center;
+		--max-size: 40;
+		--min-size: 30;
+		padding-left: var(--clamp-func);
+		padding-right: var(--clamp-func);
+		--max-size-top: 62;
+		--min-size-top: 32;
+		padding-top: clamp(
+    	calc(var(--min-size-top) * 1px),
+    	calc(
+      	(
+      		var(--min-size-top)
+        	+
+        	(var(--max-size-top) - var(--min-size-top))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-top) * 1px)
+  	);
 	}
 
 	.non__content {
@@ -39,7 +61,9 @@
 
 	.non__image {
 		align-self: flex-end;
-		max-width: 568px;
+		--max-size: 698;
+		--min-size: 568;
+		max-width: var(--clamp-func);
 	}
 
 	.non__btn {
@@ -49,8 +73,27 @@
 
 @media (max-width: 767px) {
 	.not-only {
-		padding: 32px 10px 0;
-		gap: 105px;
+		--max-size: 30;
+		--min-size: 10;
+		--max-size-gap: 100;
+		--min-size-gap: 105;
+		gap: clamp(
+    	calc(var(--min-size-gap) * 1px),
+    	calc(
+      	(
+      		var(--min-size-gap)
+        	+
+        	(var(--max-size-gap) - var(--min-size-gap))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-gap) * 1px)
+  	);
 	}
 
 	.non__content {
@@ -63,11 +106,15 @@
 	}
 
 	.non__image {
-		max-width: 260px;
+		--max-size: 568;
+		--min-size: 260;
+		max-width: var(--clamp-func);
 	}
 
 	.non__title {
-		font-size: 25px;
 		letter-spacing: 0.06em;
+		--max-size: 44;
+		--min-size: 25;
+		font-size: var(--clamp-func);
 	}
 }

@@ -24,7 +24,9 @@
 
 @media (max-width: 1111px) {
 	.of__slider__content {
-		gap: 40px;
+		--max-size: 90;
+		--min-size: 40;
+		gap: var(--clamp-func);
 	}
 }
 
@@ -40,7 +42,25 @@
 	}
 
 	.our-friends {
-		gap: 42px;
+		--max-size-gap: 60;
+		--min-size-gap: 42;
+		gap: clamp(
+    	calc(var(--min-size-gap) * 1px),
+    	calc(
+      	(
+      		var(--min-size-gap)
+        	+
+        	(var(--max-size-gap) - var(--min-size-gap))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-gap) * 1px)
+  	);
 	}
 }
 

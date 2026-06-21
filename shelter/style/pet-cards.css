@@ -7,12 +7,14 @@
 	border-radius: 9px;
 	overflow: hidden;
 	background: var(--color-light-s);
+	box-shadow: none;
 	transition: .3s;
 }
 
 .pet-card:hover {
 	cursor: pointer;
 	background: var(--color-light-xl);
+	box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .pet-card:hover .btn-border {
