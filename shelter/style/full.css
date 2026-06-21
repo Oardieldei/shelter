@@ -13,7 +13,27 @@
 	--start-screen-gradient-background: #211f20;
 	--footer-gradient-background: #211f20;
 	--font-family: "Georgia", sans-serif;
-  --second-family: "Arial", sans-serif;
+  --second-family: "Arial", sans-serif;	
+}
+
+* {
+	--clamp-func: clamp(
+    	calc(var(--min-size) * 1px),
+    	calc(
+      	(
+      		var(--min-size)
+        	+
+        	(var(--max-size) - var(--min-size))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size) * 1px)
+  	);
 }
 
 .btn-bg,
@@ -170,4 +190,74 @@ section {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 80px 40px 100px;
+}
+
+@media (max-width: 1279px) {
+	:root {
+		--max-width: 1279;
+		--min-width: 768;
+	}
+
+	section {
+		--max-size: 40;
+		--min-size: 30;
+		padding-left: var(--clamp-func);
+		padding-right: var(--clamp-func);
+	}
+}
+
+@media (max-width: 767px) {
+	:root {
+		--max-width: 767;
+		--min-width: 320;
+	}
+
+	section {
+		--max-size: 30;
+		--min-size: 10;
+		--max-size-top: 80;
+		--min-size-top: 42;
+		padding-top: clamp(
+    	calc(var(--min-size-top) * 1px),
+    	calc(
+      	(
+        	var(--min-size-top)
+        	+
+        	(var(--max-size-top) - var(--min-size-top))
+        	*
+        	(
+        	  (100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-top) * 1px)
+  	);
+		--max-size-bottom: 100;
+		--min-size-bottom: 42;
+		padding-bottom: clamp(
+    	calc(var(--min-size-bottom) * 1px),
+    	calc(
+      	(
+        	var(--min-size-bottom)
+        	+
+        	(var(--max-size-bottom) - var(--min-size-bottom))
+        	*
+        	(
+         		(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-bottom) * 1px)
+  	);
+	}
+
+	.header-3 {
+		--max-size: 35;
+		--min-size: 25;
+		font-size: var(--clamp-func)
+	}
 }

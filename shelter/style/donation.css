@@ -45,3 +45,72 @@
 .donation__number {
 	color: var(--color-dark-l);
 }
+
+@media (max-width: 1111px) {
+	.donation {
+		flex-wrap: wrap-reverse;
+		gap: 57px;
+	}
+}
+
+@media (max-width: 767px) {
+	.donation {
+		--max-size-gap: 57;
+		--min-size-gap: 42;
+		gap: clamp(
+    	calc(var(--min-size-gap) * 1px),
+    	calc(
+      	(
+      		var(--min-size-gap)
+        	+
+        	(var(--max-size-gap) - var(--min-size-gap))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-gap) * 1px)
+  	);
+	}
+
+	.donation__content {
+		align-items: center;
+		gap: 23px;
+	}
+
+	.donation__image {
+		--max-size: 505;
+		--min-size: 260;
+		max-width: var(--clamp-func);
+	}
+
+	.donation__title {
+		text-align: center;
+	}
+
+	.donation__info {
+		letter-spacing: normal;
+	}
+
+	.donation__number {
+		font-size: 15px;
+		--max-size: 20;
+		--min-size: 15;
+		font-size: var(--clamp-func);
+		line-height: 110%;
+	}
+
+	.donation__card {
+		--max-size: 349;
+		--min-size: 281;
+		width: var(--clamp-func);
+	}
+
+	.donation__description {
+		text-align: justify;
+		padding: 0 10px;
+	}
+}
