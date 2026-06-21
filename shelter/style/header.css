@@ -31,6 +31,11 @@
 	align-self: center;
 }
 
+.burger,
+.burger_checkbox {
+	display: none;
+}
+
 .nav__list {
 	display: flex;
 	align-items: center;
@@ -70,5 +75,45 @@
 @media (max-width: 1111px) {
 	.header {
 		padding: 30px 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.nav {
+		display: none;
+	}
+
+	.header {
+		padding: 30px 20px;
+	}
+
+	.burger__icon {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		transition: gap .3s ease, transform .3s ease;;
+	}
+	
+	.burger__line {
+		width: 100%;
+		height: 2px;
+		background: var(--color-primary);
+		transition: background .3s ease
+	}
+
+	.burger__icon:hover {
+		cursor: pointer;
+		gap: 6px;
+	}
+	
+	.burger__icon:hover .burger__line {
+		background: var(--color-primary-light);
+	}
+
+	.burger_checkbox:checked ~ .burger__icon {
+		transform: rotate(90deg);
 	}
 }

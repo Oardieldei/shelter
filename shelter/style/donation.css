@@ -52,3 +52,41 @@
 		gap: 57px;
 	}
 }
+
+@media (max-width: 767px) {
+	.donation {
+		gap: 42px;
+	}
+
+	.donation__content {
+		align-items: center;
+		gap: 23px;
+	}
+
+	.donation__image {
+		max-width: 260px;
+	}
+
+	.donation__title {
+		text-align: center;
+	}
+
+	.donation__info {
+		letter-spacing: normal;
+	}
+
+	.donation__number {
+		font-size: 15px;
+		line-height: 110%;
+	}
+
+	.donation__card {
+		width: 281px;
+		height: 43px;
+	}
+
+	.donation__description {
+		text-align: justify;
+		padding: 0 10px;
+	}
+}

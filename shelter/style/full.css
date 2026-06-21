@@ -177,3 +177,13 @@ section {
 		padding: 80px 30px 100px;
 	}
 }
+
+@media (max-width: 767px) {
+	section {
+		padding: 42px 10px;
+	}
+
+	.header-3 {
+		font-size: 25px;
+	}
+}

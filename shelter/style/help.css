@@ -32,3 +32,34 @@
 		width: 170px;
 	}
 }
+
+@media (max-width: 767px) {
+	.help {
+		display: flex;
+		flex-direction: column;
+		gap: 42px;
+		align-items: center;
+	}
+
+	.help__title {
+		margin-bottom: 0;
+	}
+
+	.help__item {
+		width: 130px;
+		gap: 20px;
+	}
+
+	.help__items {
+		gap: 30px;
+	}
+
+	.help__item_text {
+		font-size: 15px;
+		line-height: 110%;
+	}
+
+	.help__item_image {
+		max-width: 50px;
+	}
+}

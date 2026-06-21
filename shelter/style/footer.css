@@ -1,8 +1,5 @@
 .footer {
 	padding: 40px 40px 0;
-}
-
-.footer {
 	display: flex;
 	gap: 160px;
 	max-width: 1280px;
@@ -71,5 +68,44 @@
 
 	.footer__content {
 		padding-top: 0;
+	}
+}
+
+@media (max-width: 707px) {
+	.footer {
+		gap: 40px;
+		padding: 30px 10px 0;
+	}
+
+	.footer__content {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.footer__content_item__container {
+		align-items: center;
+	}
+
+	.footer__contacts {
+		height: 208px;
+		align-self: center;
+	}
+
+	.footer__maps {
+		height: 222px;
+		align-items: flex-start;
+	}
+
+	.footer__title {
+		text-align: center;
+		align-self: center;
+	}
+
+	.footer__maps_title {
+		max-width: 270px;
+	}
+
+	.footer__image {
+		max-width: 260px;
 	}
 }

@@ -33,3 +33,26 @@
 		display: none;
 	}
 }
+
+@media (max-width: 767px) {
+	.pet-card:nth-child(2) {
+		display: none;
+	}
+
+	.our-friends {
+		gap: 42px;
+	}
+}
+
+@media (max-width: 555px) {
+	.of__slider {
+		max-width: 270px;
+		flex-wrap: wrap;
+		gap: 20px 80px;
+		justify-content: center;
+	}
+
+	.of__slider__content_wrapper {
+		order: -1;
+	}
+}

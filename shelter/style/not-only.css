@@ -46,3 +46,28 @@
 		align-self: center;
 	}
 }
+
+@media (max-width: 767px) {
+	.not-only {
+		padding: 32px 10px 0;
+		gap: 105px;
+	}
+
+	.non__content {
+		align-items: center;
+	}
+
+	.non__title,
+	.non__text {
+		text-align: center;
+	}
+
+	.non__image {
+		max-width: 260px;
+	}
+
+	.non__title {
+		font-size: 25px;
+		letter-spacing: 0.06em;
+	}
+}

@@ -25,3 +25,32 @@
 		gap: 80px;
 	}
 }
+
+@media (max-width: 767px) {
+	.about {
+		gap: 42px;
+	}
+
+	.about__content {
+		align-items: center;
+		padding: 0 15px;
+		gap: 22px;
+	}
+
+	.about__content_title {
+		text-align: center;
+	}
+
+	.about__content_text {
+		text-align: justify;
+	}
+
+	.about__content_text:nth-child(1) {
+		padding-top: 3px;
+		max-width: 260px;
+	}
+
+	.about__image {
+		max-width: 260px;
+	}
+}
