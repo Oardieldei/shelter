@@ -121,7 +121,7 @@
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
 	.help__items {
 		justify-content: flex-start;
 		max-width: 290px;
