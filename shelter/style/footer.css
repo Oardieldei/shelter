@@ -1,0 +1,139 @@
+.footer {
+	padding: 40px 40px 0;
+	display: flex;
+	gap: 160px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.footer__content {
+	display: flex;
+	gap: 160px;
+	padding-top: 16px;
+}
+
+.footer__content_item__container {
+	height: 234px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer__contacts {
+	max-width: 279px;
+}
+
+.footer__maps {
+	max-width: 302px;
+}
+
+.footer__title {
+	color: var(--color-light-xl);
+}
+
+.footer__contact_wrapper {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	transition: transform .2s;
+}
+
+.footer__contact_wrapper:hover {
+	transform: scale(1.05, 1.05);
+}
+
+.footer__contact_text {
+	color: var(--color-primary);
+}
+
+.footer__contact_wrapper svg {
+	flex-shrink: 0;
+}
+
+@media (max-width: 1279px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+		gap: 65px;
+		--max-size: 40;
+		--min-size: 30;
+		padding-left: var(--clamp-func);
+		padding-right: var(--clamp-func);
+		padding-top: var(--clamp-func);
+	}
+
+	.footer__content {
+		--max-size: 160;
+		--min-size: 60;
+		gap: var(--clamp-func);
+	}
+
+	.footer__image {
+		max-width: 300px;
+	}
+
+	.footer__content {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.footer {
+		padding-top: 30px;
+		--max-size: 30;
+		--min-size: 10;
+		--max-size-gap: 65;
+		--min-size-gap: 40;
+		gap: clamp(
+    	calc(var(--min-size-gap) * 1px),
+    	calc(
+      	(
+      		var(--min-size-gap)
+        	+
+        	(var(--max-size-gap) - var(--min-size-gap))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-gap) * 1px)
+  	);
+	}
+
+	.footer__content {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.footer__content_item__container {
+		align-items: center;
+	}
+
+	.footer__contacts {
+		height: 208px;
+		align-self: center;
+	}
+
+	.footer__maps {
+		height: 222px;
+		align-items: flex-start;
+	}
+
+	.footer__title {
+		text-align: center;
+		align-self: center;
+	}
+
+	.footer__maps_title {
+		max-width: 270px;
+	}
+
+	.footer__image {
+		--max-size: 300;
+		--min-size: 260;
+		max-width: var(--clamp-func);
+	}
+}
