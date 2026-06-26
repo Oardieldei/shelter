@@ -36,6 +36,10 @@
   	);
 }
 
+.body {
+	position: relative;
+}
+
 .btn-bg,
 .btn-border {
 	width: fit-content;

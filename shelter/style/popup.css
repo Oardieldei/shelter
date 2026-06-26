@@ -1,0 +1,22 @@
+.bg-hider {
+	position: absolute;
+	inset: 0;
+	display: none;
+	z-index: 2;
+}
+
+.bg-hider__dark {
+	background: rgba(41, 41, 41, 0.6);
+}
+
+.bg-hider__light {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.body:has(.burger_checkbox:checked) .bg-hider {
+	display: block;
+}
+
+.body:has(.burger_checkbox:checked) {
+	overflow: hidden;
+}

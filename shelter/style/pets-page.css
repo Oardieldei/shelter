@@ -202,6 +202,10 @@
 		--min-size: 10;
 		gap: var(--clamp-func);
 	}
+
+	.nav {
+		background: var(--color-light-s);
+	}
 }
 
 @media (max-width: 627px) {
