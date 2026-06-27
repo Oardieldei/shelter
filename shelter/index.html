@@ -17,9 +17,10 @@
 	<link rel="stylesheet" href="./style/help.css">
 	<link rel="stylesheet" href="./style/donation.css">
 	<link rel="stylesheet" href="./style/footer.css">
+	<link rel="stylesheet" href="./style/popup.css">
 </head>
 
-<body>
+<body class="body">
 	<div class="bg-wrapper">
 		<header class="header">
 			<a href="#" class="logo" onclick="event.preventDefault();">
@@ -31,7 +32,7 @@
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
 				<span class="burger__line"></span>
-			</label>			
+			</label>
 			<nav class="nav">
 				<ul class="nav__list">
 					<li class="nav__item"><a href="#" class="nav__link active_link paragraph-l"
@@ -77,22 +78,10 @@
 					</svg>
 				</div>
 				<div class="of__slider__content_wrapper">
-					<div class="of__slider__content">
-						<div class="of__slider__item pet-card">
-							<img src="./images/pets/katrine.png" alt="Katrine" class="of__slider__item_image">
-							<span class="of__slider__item_name pet-card_name">Katrine</span>
-							<div class="of__slider__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="of__slider__item pet-card">
-							<img src="./images/pets/jennifer.png" alt="Jennifer" class="of__slider__item_image">
-							<span class="of__slider__item_name pet-card_name">Jennifer</span>
-							<div class="of__slider__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="of__slider__item pet-card">
-							<img src="./images/pets/woody.png" alt="Woody" class="of__slider__item_image">
-							<span class="of__slider__item_name pet-card_name">Woody</span>
-							<div class="of__slider__item_btn btn-border">Learn more</div>
-						</div>
+					<div class="of__slider__contents">
+						<div class="of__slider__content"></div>
+						<div class="of__slider__content"></div>
+						<div class="of__slider__content"></div>
 					</div>
 				</div>
 				<div class="of__slider__arrow arrow_next pagination">
@@ -232,6 +221,39 @@
 			<img src="./images/footer-puppy.png" alt="Goodbye puppy!" class="footer__image">
 		</footer>
 	</div>
+	<div class="bg-hider bg-hider__dark"></div>
+	<div class="popup">
+		<img src="./images/pets/jennifer.png" alt="" class="popup__image">
+		<div class="popup__content">
+			<div class="popup__content__titles">
+				<div class="popup__content__titles_name header-3">Jennifer</div>
+				<div class="popup__content__titles_type header-4">Dog - Labrador</div>
+			</div>
+			<p class="popup__content__description header-5">Jennifer is a sweet 2 months old Labrador that is patiently
+				waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't
+				hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+			<ul class="popup__content_list">
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Age: </span>
+					<span class="popup__item_value">2 month</span>
+				</li>
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Inoculations: </span>
+					<span class="popup__item_value">none</span>
+				</li>
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Diseases: </span>
+					<span class="popup__item_value">none</span>
+				</li>
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Parasites: </span>
+					<span class="popup__item_value">none</span>
+				</li>
+			</ul>
+		</div>
+		<div class="popup__close_icon"></div>
+	</div>
+	<script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

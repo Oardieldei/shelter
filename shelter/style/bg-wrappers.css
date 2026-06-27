@@ -16,3 +16,8 @@
 .bg-wrapper:nth-child(5) {
 	background: var(--color-light-l);
 }
+
+.bg-wrapper:nth-child(1) {
+	position: relative;
+	overflow: hidden;
+}

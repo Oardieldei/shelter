@@ -12,9 +12,10 @@
 	<link rel="stylesheet" href="../style/pet-cards.css">
 	<link rel="stylesheet" href="../style/footer.css">
 	<link rel="stylesheet" href="../style/pets-page.css">
+	<link rel="stylesheet" href="../style/popup.css">
 </head>
 
-<body>
+<body class="body">
 	<div class="bg-wrapper">
 		<header class="header">
 			<a href="../index.html" class="logo">
@@ -42,50 +43,7 @@
 		<main class="main">
 			<p class="main__title header-3">Our friends who<br>are looking for a house</p>
 			<div class="main__pets">
-				<div class="main__content_wrapper">
-					<div class="main__content">
-						<div class="main__item pet-card">
-							<img src="../images/pets/katrine.png" alt="Katrine" class="main__item_image">
-							<span class="main__item_name pet-card_name">Katrine</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/jennifer.png" alt="Jennifer" class="main__item_image">
-							<span class="main__item_name pet-card_name">Jennifer</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/woody.png" alt="Woody" class="main__item_image">
-							<span class="main__item_name pet-card_name">Woody</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/sophia.png" alt="Sophia" class="main__item_image">
-							<span class="main__item_name pet-card_name">Sophia</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/timmy.png" alt="Timmy" class="main__item_image">
-							<span class="main__item_name pet-card_name">Timmy</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/charly.png" alt="Charly" class="main__item_image">
-							<span class="main__item_name pet-card_name">Charly</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/scarlett.png" alt="Scarlett" class="main__item_image">
-							<span class="main__item_name pet-card_name">Scarlett</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>
-						<div class="main__item pet-card">
-							<img src="../images/pets/freddie.png" alt="Freddie" class="main__item_image">
-							<span class="main__item_name pet-card_name">Freddie</span>
-							<div class="main__item_btn btn-border">Learn more</div>
-						</div>						
-					</div>
-				</div>
+				<div class="main__content_wrapper"></div>
 			</div>
 			<div class="main__pagination">
 				<div class="pagination pagination-inactive">&lt;&lt;</div>
@@ -161,6 +119,39 @@
 			<img src="../images/footer-puppy.png" alt="Goodbye puppy!" class="footer__image">
 		</footer>
 	</div>
+	<div class="bg-hider bg-hider__light"></div>
+	<div class="popup">
+		<img src="../images/pets/jennifer.png" alt="" class="popup__image">
+		<div class="popup__content">
+			<div class="popup__content__titles">
+				<div class="popup__content__titles_name header-3">Jennifer</div>
+				<div class="popup__content__titles_type header-4">Dog - Labrador</div>
+			</div>
+			<p class="popup__content__description header-5">Jennifer is a sweet 2 months old Labrador that is patiently
+				waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't
+				hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+			<ul class="popup__content_list">
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Age: </span>
+					<span class="popup__item_value">2 month</span>
+				</li>
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Inoculations: </span>
+					<span class="popup__item_value">none</span>
+				</li>
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Diseases: </span>
+					<span class="popup__item_value">none</span>
+				</li>
+				<li class="popup__content_list_item">
+					<span class="popup__item_name">Parasites: </span>
+					<span class="popup__item_value">none</span>
+				</li>
+			</ul>
+		</div>
+		<div class="popup__close_icon"></div>
+	</div>
+	<script type="module" src="../js/pets-page/main.js"></script>
 </body>
 
 </html>
