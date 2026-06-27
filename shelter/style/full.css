@@ -13,7 +13,8 @@
 	--start-screen-gradient-background: #211f20;
 	--footer-gradient-background: #211f20;
 	--font-family: "Georgia", sans-serif;
-  --second-family: "Arial", sans-serif;	
+  --second-family: "Arial", sans-serif;
+	--slider-gap: 90px;
 }
 
 * {
