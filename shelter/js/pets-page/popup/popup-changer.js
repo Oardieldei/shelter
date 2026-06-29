@@ -14,7 +14,7 @@ const petsArray = await response.json()
 export function changePopup(n) {
 	const choosenPet = petsArray[n]
 
-	popupImage.src = choosenPet.img
+	popupImage.src = '.' + choosenPet.img
 	popupName.textContent = choosenPet.name
 	popupType.textContent = choosenPet.type + ' - ' + choosenPet.breed
 	popupDescription.textContent = choosenPet.description

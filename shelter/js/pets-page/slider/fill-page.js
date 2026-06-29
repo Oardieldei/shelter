@@ -1,4 +1,4 @@
-import { fillPetCardElem } from "../../pet-cards/fill-elem.js"
+import { fillPetCardElem } from "../../pet-cards-pet-page/fill-elem.js"
 import { getCardsPerPage } from "./pages-count.js"
 
 const response = await fetch('../js/json/pets.json')
