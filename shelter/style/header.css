@@ -1,0 +1,151 @@
+.header {
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.logo__title {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color: var(--color-primary);
+}
+
+.logo__subtitle {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	color: var(--color-light-xl);
+	align-self: center;
+}
+
+.burger,
+.burger_checkbox {
+	display: none;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 36px;
+}
+
+.nav__link {
+	color: var(--color-dark-s);
+	transition: color .3s;
+}
+
+.nav__link:hover {
+	cursor: pointer;
+	color: var(--color-light-s);
+}
+
+.active_link {
+	color: var(--color-light-s);
+	position: relative;
+}
+
+.active_link:hover {
+	cursor: default;
+	color: var(--color-light-s);
+}
+
+.active_link::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: -6px;
+	height: 3px;
+	background: var(--color-primary);
+}
+
+@media (max-width: 1279px) {
+	.header {
+		--max-size: 40;
+		--min-size: 30;
+		padding-left: var(--clamp-func);
+		padding-right: var(--clamp-func);	
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		--max-size: 30;
+		--min-size: 20;
+	}
+
+	.burger__icon {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		transition: gap .3s ease, transform .3s ease;
+		position: relative;
+		z-index: 999;
+	}
+	
+	.burger__line {
+		width: 100%;
+		height: 2px;
+		background: var(--color-primary);
+		transition: background .3s ease
+	}
+
+	.burger__icon:hover {
+		cursor: pointer;
+		gap: 6px;
+	}
+	
+	.burger__icon:hover .burger__line {
+		background: var(--color-primary-light);
+	}
+
+	.burger_checkbox:checked ~ .burger__icon {
+		transform: rotate(90deg);
+	}
+
+	.nav {
+		position: fixed;
+		inset: 0 0 0 auto;
+		transform: translateX(100%);
+		transition: transform .3s ease;
+		background: var(--color-dark-3xl);
+		max-width: 320px;
+		width: 100%;
+		height: 100dvh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 3;
+	}
+
+	.nav__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.nav__link {
+		font-size: 32px;
+	}
+
+	.burger_checkbox:checked ~ .nav {
+		transform: translateX(0);
+	}
+}

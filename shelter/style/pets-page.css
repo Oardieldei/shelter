@@ -1,0 +1,211 @@
+.footer__wrapper {
+	background: url("../images/noise.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header {
+	padding-bottom: 32px;
+}
+
+.logo__title {
+	color: var(--color-dark-l);
+}
+
+.logo__subtitle {
+	color: var(--color-dark-3xl);
+}
+
+.nav__link {
+	color: var(--color-dark-l);
+}
+
+.nav__link:hover {
+	color: var(--color-dark-3xl);
+}
+
+.active_link {
+	color: var(--color-dark-l);
+}
+
+.active_link:hover {
+	color: var(--color-dark-l);
+}
+
+.main-wrapper {
+	background: var(--color-light-l);
+}
+
+.main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 80px 40px 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	align-items: center;
+}
+
+.main__title {
+	color: var(--color-dark-l);
+	text-align: center;
+}
+
+.main__pets {
+	width: 100%;
+	overflow: hidden;
+}
+
+.main__content_wrapper {
+	padding: 15px 0;
+	display: flex;
+	gap: 40px;
+	transition: .3s;
+}
+
+.main__content {
+	min-width: 100%;
+	display: flex;
+	gap: 30px 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main__pagination {
+	display: flex;
+	gap: 20px;
+	user-select: none;
+}
+
+@media (max-width: 1279px) {
+	.main {
+		--max-size: 40;
+		--min-size: 30;
+		padding-left: var(--clamp-func);
+		padding-right: var(--clamp-func);
+		--max-size-pdg-bottom: 100;
+		--min-size-pdg-bottom: 78;
+		padding-bottom: clamp(
+    	calc(var(--min-size-pdg-bottom) * 1px),
+    	calc(
+      	(
+      		var(--min-size-pdg-bottom)
+        	+
+        	(var(--max-size-pdg-bottom) - var(--min-size-pdg-bottom))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-pdg-bottom) * 1px)
+  	);
+		--max-size-gap: 45;
+		--min-size-gap: 30;
+		gap: clamp(
+    	calc(var(--min-size-gap) * 1px),
+    	calc(
+      	(
+      		var(--min-size-gap)
+        	+
+        	(var(--max-size-gap) - var(--min-size-gap))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-gap) * 1px)
+  	);
+	}
+
+	.main__content_wrapper {
+		padding: 0 0 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.burger__line {
+		background: #000;
+	}
+
+	.burger__icon:hover .burger__line {
+		background: var(--color-dark-3xl);
+	}
+
+	.main {
+		--max-size: 30;
+		--min-size: 10;
+		padding-left: var(--clamp-func);
+		padding-right: var(--clamp-func);
+		--max-size-pdg-bottom: 78;
+		--min-size-pdg-bottom: 38;
+		padding-bottom: clamp(
+    	calc(var(--min-size-pdg-bottom) * 1px),
+    	calc(
+      	(
+      		var(--min-size-pdg-bottom)
+        	+
+        	(var(--max-size-pdg-bottom) - var(--min-size-pdg-bottom))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-pdg-bottom) * 1px)
+  	);
+		--max-size-pdg-top: 78;
+		--min-size-pdg-top: 42;
+		padding-top: clamp(
+    	calc(var(--min-size-pdg-top) * 1px),
+    	calc(
+      	(
+      		var(--min-size-pdg-top)
+        	+
+        	(var(--max-size-pdg-top) - var(--min-size-pdg-top))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-pdg-top) * 1px)
+  	);
+		--max-size-gap: 30;
+		--min-size-gap: 40;
+		gap: clamp(
+    	calc(var(--min-size-gap) * 1px),
+    	calc(
+      	(
+      		var(--min-size-gap)
+        	+
+        	(var(--max-size-gap) - var(--min-size-gap))
+        	*
+        	(
+          	(100vw - (var(--min-width) * 1px))
+          	/
+          	((var(--max-width) - var(--min-width)) * 1px)
+        	)
+      	) * 1px
+    	),
+    	calc(var(--max-size-gap) * 1px)
+  	);
+	}
+
+	.main__pagination {
+		--max-size: 20;
+		--min-size: 10;
+		gap: var(--clamp-func);
+	}
+
+	.nav {
+		background: var(--color-light-s);
+	}
+}
