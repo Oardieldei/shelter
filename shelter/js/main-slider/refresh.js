@@ -12,4 +12,5 @@ function refreshSlider() {
 export function refreshOnChangeWidth() {
 	desktopPage.addEventListener('change', refreshSlider)
 	tabletPage.addEventListener('change', refreshSlider)
+	window.addEventListener('resize', refreshSlider)
 }

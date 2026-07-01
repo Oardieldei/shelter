@@ -249,6 +249,7 @@
 
 @media (max-width: 767px) {
 	.popup__content__description {
+		margin: 0 auto;
 		text-align: justify;
 	}
 
@@ -272,4 +273,10 @@
 	.popup__content__titles_type {
 		text-align: center;
 	}
+}
+
+@media (max-width: 555px) {
+	.popup {
+		min-width: calc(100% - 80px);
+	}	
 }
